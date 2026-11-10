@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#17365D</item>
+        <item name="colorPrimaryVariant">#102844</item>
+        <item name="colorSecondary">#4A90D9</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:colorAccent">#4A90D9</item>
+        <item name="android:textColorPrimary">#17365D</item>
+        <item name="android:textColorSecondary">#64748B</item>
+        <item name="android:windowBackground">#F4F7FC</item>
+        <item name="android:statusBarColor">#F4F7FC</item>
+        <item name="android:navigationBarColor">#F4F7FC</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

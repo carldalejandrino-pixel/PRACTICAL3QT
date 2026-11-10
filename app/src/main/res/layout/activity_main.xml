@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:fontFamily="@font/nimbus_roman">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="30dp">
+
+            <!-- MCS LOGO -->
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/mcs_logo_mono"
+                android:scaleType="fitCenter"
+                android:contentDescription="MCS School Logo"
+                android:background="#FFFFFF"
+                android:padding="4dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MCSC"
+                    android:textColor="#FFFFFF"
+                    android:textSize="29sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SCHOOL CLINIC"
+                    android:textColor="#D0D0D0"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Welcome panel -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="#202020"
+            android:layout_marginBottom="28dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YOUR HEALTH, OUR PRIORITY"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Welcome to the Clinic"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="A central place to manage student information, medical records, and clinic visits."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp" />
+
+            <View
+                android:layout_width="54dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- Menu heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CLINIC DASHBOARD"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="18dp"
+            android:text="Choose a service to continue."
+            android:textColor="#D0D0D0"
+            android:textSize="14sp" />
+
+        <!-- Student Identification -->
+        <Button
+            android:id="@+id/btnStudentIdentification"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="#555555"
+            android:text="Student Identification     ›"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nimbus_roman"
+            android:stateListAnimator="@null" />
+
+        <!-- Register Student -->
+        <Button
+            android:id="@+id/btnRegisterStudent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="#292929"
+            android:text="Register Student     ›"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nimbus_roman"
+            android:stateListAnimator="@null" />
+
+        <!-- Medical Records -->
+        <Button
+            android:id="@+id/btnManageMedicalRecord"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="#292929"
+            android:text="Manage Medical Records     ›"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nimbus_roman"
+            android:stateListAnimator="@null" />
+
+        <!-- Clinic Visits -->
+        <Button
+            android:id="@+id/btnRecordClinicVisit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="#292929"
+            android:text="Record Clinic Visit     ›"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nimbus_roman"
+            android:stateListAnimator="@null" />
+
+        <!-- Student Records -->
+        <Button
+            android:id="@+id/btnViewStudentRecord"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="#292929"
+            android:text="View Student Records     ›"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nimbus_roman"
+            android:stateListAnimator="@null" />
+
+        <!-- Registered Users (Admin only) -->
+        <Button
+            android:id="@+id/btnRegisteredUsers"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="#333333"
+            android:text="Registered Users     ›"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nimbus_roman"
+            android:stateListAnimator="@null" />
+
+        <!-- Exit -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_button_primary"
+            android:backgroundTint="#444444"
+            android:text="Exit Clinic"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nimbus_roman"
+            android:stateListAnimator="@null" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:text="MCSC  •  SCHOOL CLINIC MANAGEMENT SYSTEM"
+            android:textColor="#D0D0D0"
+            android:textSize="11sp"
+            android:letterSpacing="0.03" />
+
+    </LinearLayout>
+
+</ScrollView>

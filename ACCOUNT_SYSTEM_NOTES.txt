@@ -1,0 +1,22 @@
+MCSC OFFLINE ACCOUNT SYSTEM
+
+- Account records are stored in the existing school_clinic.db SQLite database.
+- DatabaseHelper upgrades the database from version 6 to version 7 without dropping the existing clinic tables.
+- The first ADMIN account can be created while there are no admin accounts. Further public admin signups are blocked.
+- STUDENT accounts can be created from the Student signup screen.
+- Login accepts Gmail, Yahoo email addresses, or a phone number.
+- Passwords are stored as salted PBKDF2 hashes. The app does not display or store plaintext passwords.
+- Forgot Password is local-only: the user must provide the registered identifier and recovery phone. There is no email/SMS OTP because this build is offline. This is a basic local recovery check, not proof of phone ownership.
+- The Registered Users page can delete login accounts. Deleting an account does not delete the student's clinic/student records.
+- The current admin account and the last remaining admin account cannot be deleted from Registered Users.
+- Admin dashboard and admin authentication screens use monochrome styling. Student dashboard remains blue and omits View Student Records.
+
+FIRST RUN
+1. Launch MCSC.
+2. Choose ADMIN.
+3. Choose Create an account and create the first admin account.
+4. Return to Login and sign in.
+5. Use Registered Users from the Admin Dashboard to view/delete accounts.
+6. Log out and choose STUDENT to create student accounts.
+
+Build note: Android Gradle build could not be verified in this environment because the Gradle distribution download requires internet access. Open the project in Android Studio and run Build > Rebuild Project.

@@ -1,0 +1,3 @@
+cd app\src\test\java
+javac -d ..\..\..\lf-out PETA3\*.java
+java -cp ..\..\..\lf-out PETA3.ConsoleLauncher

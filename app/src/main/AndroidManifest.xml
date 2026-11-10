@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="MCSC"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <activity android:name=".RegisteredUsersActivity" android:exported="false" />
+        <activity android:name=".AuthActivity" android:exported="false" />
+        <activity android:name=".AccountTypeActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RecordClinicVisitActivity" android:exported="false" />
+        <activity android:name=".ManageMedicalRecordActivity" android:exported="false" />
+        <activity android:name=".StudentIdentificationActivity" android:exported="false" />
+        <activity android:name=".ViewStudentsActivity" android:exported="false" />
+        <activity android:name=".RegisterStudentActivity" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" />
+    </application>
+</manifest>

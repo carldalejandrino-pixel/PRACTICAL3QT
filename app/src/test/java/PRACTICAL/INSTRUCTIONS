@@ -1,0 +1,7 @@
+commands
+first
+cd app\src\test\java
+second
+javac PRACTICAL\GymMenu.java
+third
+java PRACTICAL.GymMenu
