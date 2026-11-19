@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hello"
+        android:scaleType="centerCrop"
+        android:contentDescription="Background"/>
+
+    <!-- Blue Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7080DC"/>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="30dp">
+
+            <!-- Main Heading -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Care you can trust!"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"/>
+
+            <!-- Sub Heading -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create an account"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginTop="3dp"/>
+
+            <!-- Signup Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#F5F6F8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:gravity="center_horizontal">
+
+                    <!-- School Logo -->
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/mcs_logo"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="School Logo"/>
+
+                    <!-- Form Title -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Information"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#009CFF"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- Birthday Label -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Birthday"
+                        android:textSize="11sp"
+                        android:textColor="#333333"/>
+
+                    <!-- Birthday Dropdowns (Day, Month, Year) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp">
+
+                        <EditText
+                            android:id="@+id/etDay"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_input"
+                            android:hint="Day"
+                            android:textSize="11sp"
+                            android:textColorHint="#888888"
+                            android:textColor="#222222"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="6dp"
+                            android:singleLine="true"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:drawableEnd="@drawable/ic_arrow_down"
+                            android:drawablePadding="2dp"/>
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="1dp"/>
+
+                        <EditText
+                            android:id="@+id/etMonth"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/bg_input"
+                            android:hint="Month"
+                            android:textSize="11sp"
+                            android:textColorHint="#888888"
+                            android:textColor="#222222"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="6dp"
+                            android:singleLine="true"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:drawableEnd="@drawable/ic_arrow_down"
+                            android:drawablePadding="2dp"/>
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="1dp"/>
+
+                        <EditText
+                            android:id="@+id/etYear"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_input"
+                            android:hint="Year"
+                            android:textSize="11sp"
+                            android:textColorHint="#888888"
+                            android:textColor="#222222"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="6dp"
+                            android:singleLine="true"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:drawableEnd="@drawable/ic_arrow_down"
+                            android:drawablePadding="2dp"/>
+
+                    </LinearLayout>
+
+                    <!-- Password Label -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textSize="11sp"
+                        android:textColor="#333333"
+                        android:layout_marginTop="14dp"/>
+
+                    <!-- Password -->
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_input"
+                        android:hint="••••••••••••••••"
+                        android:textSize="12sp"
+                        android:textColorHint="#888888"
+                        android:textColor="#222222"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:drawableEnd="@drawable/ic_eye"
+                        android:drawablePadding="10dp"/>
+
+                    <!-- Confirm Password Label -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm Password"
+                        android:textSize="11sp"
+                        android:textColor="#333333"
+                        android:layout_marginTop="14dp"/>
+
+                    <!-- Confirm Password -->
+                    <EditText
+                        android:id="@+id/etConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_input"
+                        android:hint="••••••••••••••••"
+                        android:textSize="12sp"
+                        android:textColorHint="#888888"
+                        android:textColor="#222222"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:drawableEnd="@drawable/ic_eye"
+                        android:drawablePadding="10dp"/>
+
+                    <!-- Create Account Button -->
+                    <Button
+                        android:id="@+id/btnCreateAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="28dp"
+                        android:background="@drawable/bg_button_primary"
+                        android:backgroundTint="@null"
+                        android:text="Create Account"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"/>
+
+                    <!-- Back to Login -->
+                    <TextView
+                        android:id="@+id/tvBackLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back to log in"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:layout_marginTop="16dp"
+                        android:padding="4dp"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <!-- Contact Information -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Have any concern? contact us!\nmcstayuman1949@yahoo.com"
+                        android:textSize="9sp"
+                        android:textColor="#555555"
+                        android:gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="4dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

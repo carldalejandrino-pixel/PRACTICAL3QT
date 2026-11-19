@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hello"
+        android:scaleType="centerCrop"
+        android:contentDescription="Background"/>
+
+    <!-- Blue Overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7080DC"/>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="40dp">
+
+            <!-- Main Heading -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check your email"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"/>
+
+            <!-- Sub Heading -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We sent a code to 26-0001234@gmail.com\nEnter that code to confirm your account."
+                android:textSize="13sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="3dp"/>
+
+            <!-- Enter Code Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#F5F6F8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:gravity="center_horizontal">
+
+                    <!-- School Logo -->
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/mcs_logo"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="School Logo"/>
+
+                    <!-- Form Title -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Code"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#009CFF"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- Code EditText -->
+                    <EditText
+                        android:id="@+id/etCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_input"
+                        android:hint="******"
+                        android:textSize="14sp"
+                        android:textColorHint="#888888"
+                        android:textColor="#222222"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:inputType="numberPassword"/>
+
+                    <!-- Back to Login -->
+                    <TextView
+                        android:id="@+id/tvBackLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back to log in"
+                        android:textSize="12sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="16dp"
+                        android:padding="4dp"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <!-- Continue Button -->
+                    <Button
+                        android:id="@+id/btnContinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:background="@drawable/bg_button_primary"
+                        android:backgroundTint="@null"
+                        android:text="Continue"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"/>
+
+                    <!-- Try another way Button -->
+                    <Button
+                        android:id="@+id/btnTryAnotherWay"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_button_gray"
+                        android:backgroundTint="@null"
+                        android:text="Try another way"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"/>
+
+                    <!-- Do you have an account prompt -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Do you have an account?"
+                        android:textSize="11sp"
+                        android:textColor="#666666"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Create an account Button -->
+                    <Button
+                        android:id="@+id/btnCreateAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:background="@drawable/bg_button_outline"
+                        android:backgroundTint="@null"
+                        android:text="Create an account!"
+                        android:textColor="#009CFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

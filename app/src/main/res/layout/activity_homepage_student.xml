@@ -115,7 +115,6 @@
 
         <!-- MAIN BACKGROUND -->
         <RelativeLayout
-            android:layout_dr
             android:layout_width="match_parent"
             android:layout_height="650dp"
             android:background="@drawable/taeblue___instagram_story___1_">

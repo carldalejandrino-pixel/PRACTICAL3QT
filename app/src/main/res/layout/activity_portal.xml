@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3E5FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="40dp">
+
+        <!-- SCHOOL LOGO -->
+        <ImageView
+            android:id="@+id/schoolLogo"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/mcs_logo"
+            android:scaleType="fitCenter"
+            android:contentDescription="School Logo" />
+
+        <!-- STUDENT CARD -->
+
+        <!-- SPACE BETWEEN CARDS -->
+        <LinearLayout
+            android:id="@+id/studentCard"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/hi"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="274dp"
+                android:layout_height="161dp"
+                android:contentDescription="Student Icon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_admin"
+                app:tint="#102C40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:letterSpacing="0.18"
+                android:text="STUDENT"
+                android:textColor="#FFFFFF"
+                android:textSize="29sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <!-- ADMIN CARD -->
+        <LinearLayout
+            android:id="@+id/adminCard"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/hello"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="213dp"
+                android:layout_height="167dp"
+                android:contentDescription="Administrator Icon"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_student"
+                app:tint="#15173A" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="ADMIN"
+                android:textColor="#000000"
+                android:textSize="29sp"
+                android:letterSpacing="0.18"
+                android:fontFamily="serif" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
